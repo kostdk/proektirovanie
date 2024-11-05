@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>DRBD - программная система, обеспечивающая синхронизацию между локальным блочным устройством и удалённым.</title>
+</head>
+<body>
+    <section class="header-wrap">
+        <div class="header-wrap-color">
+            <header class="wrap">
+                <div class="header-top">
+                    <div class="header-top__logo">
+                        <a href="#" class="logo"><img src="img/logo.png" alt="DRBD"></a>
+                    </div>
+                    <nav class="header-top__menu">
+                        <ul class="menu">
+                            <li><a href="#" class="menu__item">ОБЗОР</a></li>
+                            <li><a href="#" class="menu__item">ОСОБЕННОСТИ</a></li>
+                            <li><a href="#" class="menu__item">ТЕХНОЛОГИЯ</a></li>
+                            <li><a href="#" class="menu__item">КОНТАКТЫ</a></li>
+                            <li><a href="#" class="menu__item">ВОЙТИ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-top__button">
+                        <a href="#" class="button button_color_transparent">Вход</a>
+                    </div>
+                </div>
+                <div class="header-content">
+                    <h1 class="header-content__title">DRBD</h1>
+                    <p class="header-content__text">Поддерживает как синхронную, так и асинхронную репликацию. 
+                        DRBD работает локально на узле (то есть обеспечивает репликацию на удалённый узел содержимого локального блочного устройства)</p>
+                    <div class="header-content__button">
+                        <a href="#" class="button button_color_white">ПОПРОБОВАТЬ</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </section>
+    <section class="about-wrap  block block_color_white">
+        <div class="about-block wrap">
+            <div class="about-block__text">
+                <h2 class="about-block__title title">Как работает DRBD?</h2>
+                <p class="about-block__paragraph paragraph">Каждое DRBD-устройство (а DRBD-устройств одновременно может быть много) находится в одном из двух состояний:
+                    primary — первичном;
+                    secondary — вторичном.</p>
+                <a href="#" class="link link_size_m">Узнать подробнее</a>
+            </div>
+            <div class="about-block__img">
+                <img src="img/5.jpg" class="image image_border-radius" alt="DRBD">
+            </div>
+        </div>
+    </section>
+    <section class="opportunities-wrap block block_color_grey">
+        <div class="opportunities-block wrap">
+            <h2 class="opportunities-block__title title">Возможности</h2>
+            <div class="opportunities-block__content">
+                <article class="opportunities-block__item">
+                    <img src="img/1.jpg" class="image image_border-radius" alt="Opportuniti_1">
+                    <div class="opportunities-block__text">
+                        <h3 class="title title_size_s">Входит в ванильное ядро Linux с 15 декабря 2009 года.</h3>
+                        <p class="opportunities-block__p paragraph paragraph_size_s">Одним из применений является построение отказоустойчивых кластерных систем на операционной системе с ядром Linux.</p>
+                        <p><a href="#" class="link">Подробнее</a></p>
+                    </div>
+                </article>
+                <article class="opportunities-block__item">
+                    <img src="img/2.jpg" class="image image_border-radius" alt="Opportuniti_2">
+                    <div class="opportunities-block__text">
+                        <h3 class="title title_size_s">Используйте DRBD</h3>
+                        <p class="opportunities-block__p paragraph paragraph_size_s">DRBD работает локально на узле (то есть обеспечивает репликацию на удалённый узел содержимого локального блочного устройства). Для использования создаётся новое устройство, обычно /dev/drbdX (X — число). Для нормальной работы DRBD должен быть запущен на обоих узлах.</p>
+                        <p><a href="#" class="link">Подробнее</a></p>
+                    </div>
+                </article>
+                <article class="opportunities-block__item">
+                    <img src="img/3.png" class="image image_border-radius" alt="Opportuniti_3">
+                    <div class="opportunities-block__text">
+                        <h3 class="title title_size_s">Большинство операций осуществляется с помощью утилиты drbdadm, хотя фактическая работа происходит на уровне ядра.</h3>
+                        <p class="opportunities-block__p paragraph paragraph_size_s">Если локальное устройство выходит из строя и включена маскировка ошибок, то устройство /dev/drbdX продолжает работать, получая данные через сеть, этот режим называется «бездисковым» (diskless). </p>
+                        <p><a href="#" class="link">Подробнее</a></p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="technologies-wrap block block_color_white">
+        <div class="technologies-block wrap">
+            <h2 class="technologies-block__title title">Технологии</h2>
+            <div class="technologies-block__content">
+                <article class="technologies-block__item">
+                    <p class="technologies-block__number">01</p>
+                    <img class="technologies-block__img" src="img/cloud-icon.png" alt="01">
+                    <div class="technologies-block__text">
+                        <h3 class="title title_size_s">Удаленное хранение</h3>
+                        <p class="technologies-block__p paragraph paragraph_size_s">Доступ из любой точки мира с любого устройства</p>
+                    </div>
+                </article>
+                <article class="technologies-block__item">
+                    <p class="technologies-block__number">02</p>
+                    <img class="technologies-block__img" src="img/secure-icon.png" alt="02">
+                    <div class="technologies-block__text">
+                        <h3 class="title title_size_s">Безопасность</h3>
+                        <p class="technologies-block__p paragraph paragraph_size_s">Вся  информация хранится на защищенных облачных серверах</p>
+                    </div>
+                </article>
+                <article class="technologies-block__item">
+                    <p class="technologies-block__number">03</p>
+                    <img class="technologies-block__img" src="img/pdf-icon.png" alt="03">
+                    <div class="technologies-block__text">
+                        <h3 class="title title_size_s">PDF презентация</h3>
+                        <p class="technologies-block__p paragraph paragraph_size_s">Хотите узнать больше?</p>
+                    </div>
+                </article>
+                <article class="technologies-block__item">
+                    <p class="technologies-block__number">04</p>
+                    <img class="technologies-block__img" src="img/csv-icon.png" alt="04">
+                    <div class="technologies-block__text">
+                        <h3 class="title title_size_s">Резервирование</h3>
+                        <p class="technologies-block__p paragraph paragraph_size_s">резервное копирование</p>
+                    </div>
+                </article>
+        </div>
+
+    </section>
+    <section class="download-wrap  block block_color_navy">
+        <div class="download-block wrap">
+            <div class="download-block__text">
+                <h2 class="download-block__title title">Сосредоточьтесь на экономии денег</h2>
+                <p class="download-block__paragraph paragraph">Ваши данные будут в сохранности, чтобы вы могли тратить время на другие проекты. Просто присоединяйтесь сегодня, чтобы начать! Пингвин не даст соврать!</p>
+                <div class="download-block__app">
+                    <a href="#" class="download-block__link"><img src="img/icon-logo-google-playstore.png" alt="playstore"></a>
+                    <a href="#" class="download-block__link"><img src="img/icon-logo-apple-appstore.png" alt="appstore"></a>
+                </div>
+            </div>
+            <div class="download-block__img">
+                <img src="img/4.png" class="image image_border-radius" alt="Linux">
+            </div>
+        </div>
+    </section>
+    <section class="contact-wrap  block block_color_white">
+        <div class="contact-block wrap">
+            <div class="contact-block__text">
+                <h2 class="contact-block__title title">Напишите нам</h2>
+                <p class="contact-block__paragraph paragraph">Остались вопросы или опасения? Просто заполните форму ниже, и наша служба поддержки свяжется с вами в течение 24 часов.</p>
+            </div>
+            <div class="contact-block__form">
+                <form action="" method="">
+                    <input type="text" class="contact-block__input" name="name" placeholder="Имя">
+                    <input type="text" class="contact-block__input" name="phone" placeholder="Телефон">
+                    <input type="submit" class="contact-block__button button button_color_navy" name="send" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-wrap  block block_color_grey">
+        <div class="footer-block wrap">
+            <div class="footer-block__text">
+                <h3 class="footer-block__title title title_size_s">Адрес</h3>
+                <p class="footer-block__p paragraph paragraph_size_s">INBIT HA-Solutions GmbH.<br>
+                    big Tower, last Floor<br>
+                    Vienna, Austria</p>
+            </div>
+            <p class="footer-block__copiright paragraph paragraph_size_s">Copyright 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
